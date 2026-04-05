@@ -48,7 +48,7 @@ const db = getFirestore(app);
 const appId = "monopoly-bank-app";
 
 // --- FUNÇÕES AUXILIARES DE MOEDA ---
-const formatCurrencyInput = (value) => {
+const formatCurrencyInput = (value: any) => {
   if (!value) return "";
   const digits = value.replace(/\D/g, "");
   if (digits === "") return "";
