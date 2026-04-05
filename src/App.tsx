@@ -59,7 +59,7 @@ const formatCurrencyInput = (value: any) => {
   });
 };
 
-const parseCurrency = (value) => {
+const parseCurrency = (value: any) => {
   if (!value) return 0;
   const digits = value.replace(/\D/g, "");
   return parseInt(digits, 10) / 100;
